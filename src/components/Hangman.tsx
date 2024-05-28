@@ -17,7 +17,7 @@ const Hangman = ({ words, hints }: HangmanProps) => {
     setErrorCount(0);
   }, [words]);
 
-  const displayWord = selectedWord.split('').map((letter, index) => {
+  const displayWord = selectedWord.split('').map((letter) => {
     if (guessedLetters.includes(letter)) {
       return letter;
     } else {

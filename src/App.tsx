@@ -43,7 +43,7 @@ const wordCategories: WordCategories = {
       naranja: 'Es redonda y naranja'
     }
   },
-  películas: {
+  peliculas: { // Cambiado aquí
     words: ['avatar', 'inception', 'tiburón', 'titanic', 'matrix', 'starwars'],
     hints: {
       avatar: 'Está ambientada en un planeta distante llamado Pandora',
@@ -66,6 +66,7 @@ const wordCategories: WordCategories = {
     }
   }
 };
+
 
 function App() {
   const [currentCategory, setCurrentCategory] = useState<keyof WordCategories | null>(null);
